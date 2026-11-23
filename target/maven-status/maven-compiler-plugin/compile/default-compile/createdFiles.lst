@@ -1,0 +1,6 @@
+com/studentmanagement/database/DatabaseConnection.class
+com/studentmanagement/controller/StudentController.class
+com/studentmanagement/model/Student.class
+com/studentmanagement/service/StudentService.class
+com/studentmanagement/Main.class
+com/studentmanagement/dao/StudentDAO.class

@@ -1,0 +1,6 @@
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/Main.java
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/controller/StudentController.java
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/dao/StudentDAO.java
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/database/DatabaseConnection.java
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/model/Student.java
+/home/core/Desktop/studentManagementSystem/src/main/java/com/studentmanagement/service/StudentService.java

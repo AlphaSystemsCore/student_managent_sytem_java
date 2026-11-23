@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studentmanagement.controller.StudentController"
+            prefWidth="1000" prefHeight="650">
+
+    <top>
+        <VBox spacing="15" style="-fx-padding: 20;">
+
+            <Label text="STUDENT MANAGEMENT SYSTEM"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <GridPane hgap="10" vgap="10">
+
+                <Label text="First Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="firstNameField" promptText="First name"
+                           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Last Name:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                <TextField fx:id="lastNameField" promptText="Last name"
+                           GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="emailField" promptText="Email"
+                           GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Gender:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                <ComboBox fx:id="genderCombo" promptText="Select gender"
+                          GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                <Label text="Course:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="courseCombo" promptText="Select course"
+                          GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Year of Study:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                <TextField fx:id="yearField" promptText="Year"
+                           GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+            </GridPane>
+
+            <HBox spacing="10">
+                <Button text="Register" onAction="#registerStudent"/>
+                <Button text="Update" onAction="#updateStudent"/>
+                <Button text="Delete" onAction="#deleteStudent"/>
+                <Button text="Clear" onAction="#clearForm"/>
+            </HBox>
+
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="studentTable">
+
+            <columns>
+
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="60"/>
+
+                <TableColumn fx:id="firstNameColumn"
+                             text="First Name" prefWidth="130"/>
+
+                <TableColumn fx:id="lastNameColumn"
+                             text="Last Name" prefWidth="130"/>
+
+                <TableColumn fx:id="emailColumn"
+                             text="Email" prefWidth="180"/>
+
+                <TableColumn fx:id="genderColumn"
+                             text="Gender" prefWidth="90"/>
+
+                <TableColumn fx:id="courseColumn"
+                             text="Course" prefWidth="160"/>
+
+                <TableColumn fx:id="yearColumn"
+                             text="Year" prefWidth="80"/>
+
+            </columns>
+
+        </TableView>
+    </center>
+
+</BorderPane>
